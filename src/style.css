@@ -1,6 +1,16 @@
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
+h1 {
+  color: #878787;
+  font-size: 40px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 28px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -10,11 +20,51 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-weight: 100;
+  line-height: 19px;
+  text-transform: capitalize;
+}
+li:first-letter {
+  text-transform: capitalize;
+}
+img {
+  height: 64px;
+  width: 64px;
 }
 .weather-app {
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-wrapper {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
   max-width: 600px;
-  margin: 30px auto;
+  margin: 0px;
+}
+.date-time {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+}
+.temp {
+  font-size: 50px;
+  color: rgb(51, 51, 51);
+}
+.celcius {
+  color: rgb(51, 51, 51);
+}
+.weather-description {
+  color: #878787;
+}
+
+.temp-details {
+  font-size: 13px;
+  text-align: left;
+  color: #878787;
+}
+
+.github {
+  color: rgb(135, 135, 135);
 }
