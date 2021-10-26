@@ -14,47 +14,43 @@
     <title>Strawberry Weather</title>
   </head>
   <body>
-  <div class="container"></div>
+  <div class="container">
     <div class="weather-app">
-       <div class="weather-wrapper">
-      <h1 id="city">In Paris</h1>
-      <ul class="date-time" id="date-time">
-      <li>Wednesday, 20 Oct</li>
-      <li>12:31</li>
-      </ul>
-       </br>
-      <div class="row">
-         <div class="col-2">
-              <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly-cloudy">
-            </div>
-        <div class="col-6">
-          <ul class="temp-description">
-            <li>
-              <span class="temp" id="temp"> 12 </span> 
-              <span class="celcius" id="celcius"> ℃ </span>
-              <span >|</span>
-              <span class="fahr" id="fahr">℉</span>
-            </li>
-              </ul>
-              <ul>
-            <li> 
-              <span class="weather-description" id="weather-description"> Partly cloudy</span>
-            </li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <ul class="temp-details">
-                <li id="humidity">Humidity:</li>
-                <li id="wind">Wind: 00</li>
-              </ul>
-        </div>
-      </div>   
-    </div>
-        <small class="github">
+      <div class="weather-wrapper">
+          <h1 id="city">In Paris</h1>
+          <div class="date-time" id="date-time">Wednesday, 20 Oct</div>
+            <div class="weather-description" id="weather-description"> Partly cloudy</div>
+              </br>
+            <div class="row">
+              <div class="col-2">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
+                alt="partly-cloudy"
+                class="icon"
+                id="icon">
+              </div>
+              <div class="col-6" >
+                <ul class="temp-description">
+                  <li>
+                    <span class="temp" id="temp"> 12 </span> 
+                    <span class="celcius" id="celcius"> ℃ </span>
+                    <span >|</span>
+                    <span class="fahr" id="fahr">℉</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <ul class="temp-details">
+                  <li id="humidity">Humidity:</li>
+                  <li id="wind">Wind: 00</li>
+                </ul>
+              </div>
+            </div>   
+      </div>
+          <small class="github">
             <a href="https://github.com/nicolefrei8/Strawberry-Weather-App" target="_blank">Open-source code</a>
             by Nicole Frei
-        </small>
-   </div>
+           </small>
+    </div>
   </div>
    
     <script src="src/java.js"></script>

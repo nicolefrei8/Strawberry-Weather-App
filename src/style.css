@@ -27,9 +27,10 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+
 img {
-  height: 64px;
-  width: 64px;
+  height: 70px;
+  width: 70px;
 }
 .weather-app {
   padding: 20px;
@@ -45,24 +46,42 @@ img {
   margin: 0px;
 }
 .date-time {
-  font-size: 14px;
-  color: rgb(51, 51, 51);
+  font-size: 16px;
+  color: rgb(135, 135, 135);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  line-height: 19px;
+  text-transform: capitalize;
 }
 .temp {
-  font-size: 50px;
+  font-size: 60px;
   color: rgb(51, 51, 51);
 }
 .celcius {
   color: rgb(51, 51, 51);
 }
 .weather-description {
-  color: #878787;
+  font-size: 20px;
+  color: rgb(135, 135, 135);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  line-height: 19px;
+  text-transform: capitalize;
 }
-
+.temp-description {
+  position: relative;
+  top: 25px;
+}
 .temp-details {
-  font-size: 13px;
+  font-size: 12px;
   text-align: left;
   color: #878787;
+  position: relative;
+  top: 15px;
 }
 
 .github {
