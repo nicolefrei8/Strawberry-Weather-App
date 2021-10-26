@@ -47,9 +47,17 @@ function displayTemperature(response) {
 
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
+function search(cityName) {
+  let apiKey = "72bb9dab46b9ec3d65f423c63f27a9b8";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-let apiKey = "72bb9dab46b9ec3d65f423c63f27a9b8";
-let cityName = "melbourne";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+function searchClick(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#search-input");
+  search(cityInput.value);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", searchClick);
