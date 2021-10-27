@@ -87,3 +87,10 @@ img {
 .github {
   color: rgb(135, 135, 135);
 }
+.temp-description.active {
+  color: rgb(51, 51, 51);
+  cursor: default;
+}
+.temp-description.active:hover {
+  text-decoration: none;
+}
