@@ -46,13 +46,13 @@ function displayTemperature(response) {
     "alt",
     `http://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`
   );
-
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 function search(cityName) {
   let apiKey = "72bb9dab46b9ec3d65f423c63f27a9b8";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
+  console.log(apiUrl);
 }
 
 function searchClick(event) {
