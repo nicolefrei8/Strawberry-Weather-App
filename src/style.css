@@ -58,6 +58,9 @@ img {
 .temp {
   font-size: 60px;
   color: rgb(51, 51, 51);
+  position: relative;
+  top: 25px;
+  text-decoration: none;
 }
 .celcius {
   color: rgb(51, 51, 51);
@@ -72,10 +75,7 @@ img {
   line-height: 19px;
   text-transform: capitalize;
 }
-.temp-description {
-  position: relative;
-  top: 25px;
-}
+
 .temp-details {
   font-size: 12px;
   text-align: left;
@@ -86,6 +86,9 @@ img {
 
 .github {
   color: rgb(135, 135, 135);
+}
+.temp-description {
+  text-decoration: none;
 }
 .temp-description.active {
   color: rgb(51, 51, 51);
