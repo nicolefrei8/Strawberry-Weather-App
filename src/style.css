@@ -28,10 +28,6 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-img {
-  height: 70px;
-  width: 70px;
-}
 .weather-app {
   padding: 20px;
   border-radius: 5px;
@@ -75,6 +71,10 @@ img {
   line-height: 19px;
   text-transform: capitalize;
 }
+.main-icon {
+  height: 70px;
+  width: 70px;
+}
 
 .temp-details {
   font-size: 12px;
@@ -82,6 +82,23 @@ img {
   color: #878787;
   position: relative;
   top: 15px;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.forecast-day {
+  color: #878787;
+}
+.forecast-icon {
+  width: 36px;
+}
+.high-temp {
+  font-size: 14px;
+}
+.low-temp {
+  color: #878787;
+  font-size: 14px;
 }
 
 .github {
