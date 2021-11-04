@@ -108,30 +108,6 @@ function searchClick(event) {
   let cityInput = document.querySelector("#search-input");
   search(cityInput.value);
 }
-function convertFahr(event) {
-  event.preventDefault();
-  let temp = document.querySelector("#temp");
-  let fahrTemp = (celciusTemp * 9) / 5 + 32;
-  celciusLink.classList.remove("active");
-  fahrLink.classList.add("active");
-  temp.innerHTML = Math.round(fahrTemp);
-}
-
-function convertCelcius(event) {
-  event.preventDefault();
-  let temp = document.querySelector("#temp");
-  celciusLink.classList.add("active");
-  fahrLink.classList.remove("active");
-  temp.innerHTML = Math.round(celciusTemp);
-}
-
-let celciusTemp = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchClick);
-
-let fahrLink = document.querySelector("#fahr-link");
-fahrLink.addEventListener("click", convertFahr);
-
-let celciusLink = document.querySelector("#celcius-link");
-celciusLink.addEventListener("click", convertCelcius);
