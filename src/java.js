@@ -20,6 +20,33 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `Last updated:  ${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  let forecastHtml = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `       <div class="col-2">
+                <span class="forecast-day">
+                  ${day}
+                </span>
+                <img 
+                src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" 
+                alt=""
+                class="forecast-icon">
+                <span class="high-temp">
+                10
+                </span>
+                <span class="low-temp">
+                  5
+                </span>
+            </div>`;
+  });
+  forecastHtml = forecastHtml + `</div>`;
+  forecastElement.innerHTML = forecastHtml;
+}
 
 function displayTemperature(response) {
   let cityElement = document.querySelector("#city");
@@ -42,7 +69,7 @@ function displayTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  iconElement.setAttribute(
+  weatherDescription.setAttribute(
     "alt",
     `http://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`
   );
@@ -76,6 +103,9 @@ function convertCelcius(event) {
   fahrLink.classList.remove("active");
   temp.innerHTML = Math.round(celciusTemp);
 }
+
+displayForecast();
+
 let celciusTemp = null;
 
 let form = document.querySelector("#search-form");
